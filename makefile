@@ -4,9 +4,10 @@
 README.md:
 	touch README.md
 	echo "# UNIX WORKBENCH" > README.md
-	echo "DATE; " >> README.md
+	echo "DATE: " >> README.md
 	date +%d-%m-%Y" "%H:%M:%S >> README.md
-	echo "  Number of lines in guessinggame.sh" >> README.md
+	echo "\s\s" >> README.md
+	echo "Number of lines in guessinggame.sh: " >> README.md
 	find . -type f | wc -l >> README.md
 
 clean:
