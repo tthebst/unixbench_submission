@@ -1,12 +1,10 @@
 
-
 function counthowmanyfiles {
     counter=$(find . -type f | wc -l)
     echo $counter
 }
 
-
-echo "how many files are in this directory?"
+echo "how many files are in this directory?(also hidden files and in subfolder)"
 count=$(find . -type f | wc -l)
 count=$(counthowmanyfiles)
 guess=-1
